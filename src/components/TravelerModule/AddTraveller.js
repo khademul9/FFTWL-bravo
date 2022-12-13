@@ -15,7 +15,7 @@ const AddTraveller = () => {
             // gap: 4,
           }}
         >
-          <Grid container spacing={2}>
+          <Grid container spacing={1}>
             <Box className="bodyBgColor">
               <Box>
                 <Typography
@@ -31,9 +31,9 @@ const AddTraveller = () => {
               </Box>
               <form>
                 <Box className="passengerInput1">
-                  <Grid container spacing={4}>
+                  <Grid container spacing={2} columnSpacing={3}>
                     <Grid item md={4}>
-                      <Typography>First/Given Name</Typography>
+                      {/* <Typography>First/Given Name</Typography> */}
                       <Box style={{ marginTop: "5px" }}>
                         <input
                           required
@@ -43,7 +43,7 @@ const AddTraveller = () => {
                       </Box>
                     </Grid>
                     <Grid item md={4}>
-                      <Typography>Last/Surname</Typography>
+                      {/* <Typography>Last/Surname</Typography> */}
                       <Box style={{ marginTop: "5px" }}>
                         <input
                           required
@@ -53,7 +53,7 @@ const AddTraveller = () => {
                       </Box>
                     </Grid>
                     <Grid item md={4}>
-                      <Typography>Gender</Typography>
+                      {/* <Typography>Gender</Typography> */}
                       <Box style={{ marginTop: "5px" }}>
                         <select required name="Male" id="Male">
                           <option value="Select  ">Select </option>
@@ -64,13 +64,13 @@ const AddTraveller = () => {
                     </Grid>
 
                     <Grid item md={4}>
-                      <Typography>Nationality</Typography>
+                      {/* <Typography>Nationality</Typography> */}
                       <Box style={{ marginTop: "5px" }}>
                         <input required type="text" placeholder="Bangladesh" />
                       </Box>
                     </Grid>
                     <Grid item md={4}>
-                      <Typography>Passenger Type</Typography>
+                      {/* <Typography>Passenger Type</Typography> */}
                       <Box style={{ marginTop: "5px" }}>
                         <select required name="Adult" id="Adult">
                           <option value="Select">Select </option>
@@ -82,7 +82,7 @@ const AddTraveller = () => {
                     </Grid>
 
                     <Grid item md={4}>
-                      <Typography>Date of Birth</Typography>
+                      {/* <Typography>Date of Birth</Typography> */}
                       <Box style={{ marginTop: "5px" }}>
                         <input
                           required
@@ -92,7 +92,7 @@ const AddTraveller = () => {
                       </Box>
                     </Grid>
                     <Grid item md={4}>
-                      <Typography>Passport No</Typography>
+                      {/* <Typography>Passport No</Typography> */}
                       <Box style={{ marginTop: "5px" }}>
                         <input
                           required
@@ -102,7 +102,7 @@ const AddTraveller = () => {
                       </Box>
                     </Grid>
                     <Grid item md={4}>
-                      <Typography>Passport Expire Date</Typography>
+                      {/* <Typography>Passport Expire Date</Typography> */}
                       <Box style={{ marginTop: "5px" }}>
                         <input
                           required
@@ -112,7 +112,7 @@ const AddTraveller = () => {
                       </Box>
                     </Grid>
                     <Grid item md={4}>
-                      <Typography>Email</Typography>
+                      {/* <Typography>Email</Typography> */}
                       <Box style={{ marginTop: "5px" }}>
                         <input
                           required
@@ -122,7 +122,7 @@ const AddTraveller = () => {
                       </Box>
                     </Grid>
                     <Grid item md={4}>
-                      <Typography>Contact Number</Typography>
+                      {/* <Typography>Contact Number</Typography> */}
                       <Box style={{ marginTop: "5px" }}>
                         <input
                           required
@@ -132,7 +132,7 @@ const AddTraveller = () => {
                       </Box>
                     </Grid>
                     <Grid item md={4}>
-                      <Typography>Choose Passport Copy</Typography>
+                      {/* <Typography>Choose Passport Copy</Typography> */}
                       <Box style={{ marginTop: "5px" }}>
                         <input
                           required

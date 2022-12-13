@@ -55,6 +55,7 @@ th {
   height: 32px;
   box-sizing: border-box;
   font-size: 14px;
+  border-radius: 2px;
 }
 
 .passengerInput1 select {

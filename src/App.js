@@ -5,10 +5,11 @@ import AuthProvider from "./components/Contexts/AuthProvider";
 import Traveller from "./components/TravelerModule/Traveller";
 import BankAccount from "./components/AccountModule/BankAccount";
 import AddBank from './components/AccountModule/AddBank';
+import AddTraveller from "./components/TravelerModule/AddTraveller";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       {/* all route */}
       <AuthProvider>
         <BrowserRouter>
@@ -16,6 +17,8 @@ function App() {
             <Route path="/traveler" element={<Traveller />} />
             <Route path="/bankAccount" element={<BankAccount/>} />
             <Route path="/addBank" element={<AddBank/>} />
+            <Route path="/addtraveler" element={<AddTraveller />} />
+
           </Routes>
         </BrowserRouter>
       </AuthProvider>

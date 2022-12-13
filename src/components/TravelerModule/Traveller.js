@@ -69,8 +69,6 @@ const Traveller = () => {
                 fontWeight: 600,
                 fontSize: "26px",
                 color: "var(--black-color)",
-                fontFamily: "poppins",
-                textAlign: "left",
               }}
             >
               Travelers
@@ -80,7 +78,7 @@ const Traveller = () => {
                 fontWeight: 400,
                 fontSize: "17px",
                 color: "var(--primary-color)",
-                fontFamily: "poppins",
+              
               }}
             >
               You can find your all air ticket booking details here

@@ -19,15 +19,16 @@ function App() {
             <Route path="/traveler" element={<Traveller />} />
             <Route path="/addtraveler" element={<AddTraveller />} />
 
+
             <Route
               path="/generalledgerall"
               element={<GeneralLedgerRoute />}
             />
-
             <Route
               path="/generalLedgerReport"
               element={<GeneralLedgerReport />}
             />
+
 
             {/* ---------------------- -------------------------- ------------------------------- */}
 

@@ -1,10 +1,28 @@
 import React from "react";
-import { Box, Button, Container, Input } from "@mui/material";
-import { Typography } from "@mui/material";
+import {
+  Box,
+  Button,
+  Container,
+  Pagination,
+  Stack,
+  Typography,
+} from "@mui/material";
+
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 import { Link } from "react-router-dom";
 import SearchIcon from "@mui/icons-material/Search";
 import "./Traveler.css";
+
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: "#405687",
+      darker: "#405687",
+    },
+  },
+});
 
 const Traveller = () => {
   const handleSearch = (e) => {
@@ -78,7 +96,6 @@ const Traveller = () => {
                 fontWeight: 400,
                 fontSize: "17px",
                 color: "var(--primary-color)",
-              
               }}
             >
               You can find your all air ticket booking details here
@@ -165,6 +182,43 @@ const Traveller = () => {
               </tr>
             </tbody>
           </table>
+        </Box>
+        <Box
+          sx={{
+            width: "100%",
+            my: 3,
+            display: "flex",
+            justifyContent: "flex-end",
+            alignItems: "center",
+            borderTop: "1px solid #282E2C",
+            marginTop: "30px",
+          }}
+        >
+          <Box
+            sx={{
+              width: "100%",
+              my: 3,
+              display: "flex",
+              justifyContent: "flex-end",
+              alignItems: "center",
+
+              marginTop: "8px",
+            }}
+          >
+            <Typography style={{ fontSize: "15px", color: "#282E2C" }}>
+              Showing Results 1 - 10 of 20
+            </Typography>
+            <ThemeProvider theme={theme}>
+              <Stack spacing={2}>
+                <Pagination
+                  size="small"
+                  //   count={pageCount}
+                  // onChange={handlePageChange}
+                  color="primary"
+                />
+              </Stack>
+            </ThemeProvider>
+          </Box>
         </Box>
       </Container>
     </Box>

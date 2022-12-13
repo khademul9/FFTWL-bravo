@@ -7,6 +7,10 @@ import SearchIcon from "@mui/icons-material/Search";
 import "./Traveler.css";
 
 const Traveller = () => {
+  const handleSearch = (e) => {
+    console.log(e);
+  };
+
   return (
     <Box>
       <Container maxWidth="lg" style={{ marginTop: "50px" }}>
@@ -47,6 +51,7 @@ const Traveller = () => {
                   class="search-text"
                   type="text"
                   placeholder="Search....."
+                  onChange={(e) => handleSearch(e.target.value)}
                 />
                 <Button class="search-btn">
                   <SearchIcon />

@@ -11,6 +11,48 @@ const Traveller = () => {
     console.log(e);
   };
 
+  const travelerInfo = [
+    {
+      sl: "1",
+      name: "Rifat",
+      gender: "Male",
+      type: "ADT",
+      dob: "12 oct 2022",
+      nationality: "Bangladesh",
+      passNo: "A20360",
+      passExDate: "14 oct 2025",
+      passCopy: "view",
+      email: "rifat@.info",
+      phone: "01775134671",
+    },
+    {
+      sl: "2",
+      name: "Abdul",
+      gender: "Male",
+      type: "ADT",
+      dob: "13 oct 2022",
+      nationality: "Bangladesh",
+      passNo: "A20360",
+      passExDate: "14 oct 2025",
+      passCopy: "view",
+      email: "abdul@.info",
+      phone: "01775134671",
+    },
+    {
+      sl: "3",
+      name: "Karim",
+      gender: "Male",
+      type: "ADT",
+      dob: "18 oct 2022",
+      nationality: "Bangladesh",
+      passNo: "A20360",
+      passExDate: "14 oct 2025",
+      passCopy: "view",
+      email: "karim@.info",
+      phone: "01775134671",
+    },
+  ];
+
   return (
     <Box>
       <Container maxWidth="lg" style={{ marginTop: "50px" }}>
@@ -73,7 +115,7 @@ const Traveller = () => {
             >
               <Link
                 style={{ textDecoration: "none", color: "#fff" }}
-                to={"/addtraveller"}
+                to={"/addtraveler"}
               >
                 Add Travelers
               </Link>

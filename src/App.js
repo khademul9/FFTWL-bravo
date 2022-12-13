@@ -7,6 +7,7 @@ import Traveller from "./components/TravelerModule/Traveller";
 function App() {
   return (
     <div className="App">
+      {/* all route */}
       <AuthProvider>
         <BrowserRouter>
           <Routes>

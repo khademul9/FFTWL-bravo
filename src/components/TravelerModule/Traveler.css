@@ -1,4 +1,10 @@
-/*  all table style  */
+/*  all table style */
+
+.bodyBgColor {
+  background-color: var(--bodyBg-color);
+  border-radius: 5px;
+  padding: 30px 40px 80px 40px;
+}
 
 .balance-transaction table {
   font-family: arial, sans-serif;
@@ -30,6 +36,54 @@ th {
 
 .balance-transaction table tr:hover {
   background-color: #e0ecfb !important;
+}
+
+.passengerInput1 p {
+  color: var(--primary-color);
+  font-family: "Poppins";
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.passengerInput1 input {
+  border: 0px;
+  border: 1px solid var(--primary-color);
+  width: 100%;
+  padding: 5px 10px;
+  color: var(--primary-color);
+  height: 32px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.passengerInput1 select {
+  border: 0px;
+  border: 1px solid var(--primary-color);
+  width: 100%;
+  padding: 5px 10px;
+  color: var(--bodyBg-color);
+  height: 32px;
+  background-color: var(--primary-color);
+}
+
+.passengerInput1 input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #2d669b;
+  opacity: 1; /* Firefox */
+
+  font-family: "Poppins";
+}
+
+.passengerInput1 input:focus {
+  outline: none;
+}
+.passengerInput1 select:focus {
+  outline: none;
+}
+
+.passengerInput1 input::file-selector-button {
+  display: none;
 }
 
 /* Animation round Search bar start  */

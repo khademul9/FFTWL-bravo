@@ -6,6 +6,7 @@ import BankAccount from "./components/AccountModule/BankAccount";
 import AddBank from "./components/AccountModule/AddBank";
 import AddTraveller from "./components/TravelerModule/AddTraveller";
 import GeneralLedgerReport from "./components/LedgerModule/GeneralLedgerReport";
+import GeneralLedgerRoute from "./components/LedgerModule/LedgerTableData/GeneralLedgerRoute";
 
 function App() {
   return (
@@ -17,10 +18,18 @@ function App() {
             {/* Rifat */}
             <Route path="/traveler" element={<Traveller />} />
             <Route path="/addtraveler" element={<AddTraveller />} />
+
+            <Route
+              path="/generalledgerall"
+              element={<GeneralLedgerRoute />}
+            />
+
             <Route
               path="/generalLedgerReport"
               element={<GeneralLedgerReport />}
             />
+
+            {/* ---------------------- -------------------------- ------------------------------- */}
 
             {/* Nasim */}
             <Route path="/bankAccount" element={<BankAccount />} />

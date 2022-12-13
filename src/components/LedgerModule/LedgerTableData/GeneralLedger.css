@@ -1,0 +1,17 @@
+.searchList1-select select {
+  border: none;
+  border: 1px solid var(--primary-color);
+  border-radius: 2px;
+  height: 34px;
+  padding: 0px 5px !important;
+  font-size: 14px;
+  max-height: 300px;
+  overflow-y: scroll;
+  width: 100%;
+  color: var(--primary-color) !important;
+  background-color: transparent;
+}
+
+.searchList1-select select:focus {
+  outline: none;
+}

@@ -3,8 +3,13 @@ import { Box, Container, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import { Button } from "@mui/material";
 import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
+import SearchIcon from "@mui/icons-material/Search";
 
 const BankAccount = () => {
+    const handleSearch = (e) => {
+        console.log(e);
+      };
+    
   return (
     <Box>
       <Container maxWidth="lg" style={{ marginTop: "50px" }}>
@@ -32,6 +37,19 @@ const BankAccount = () => {
             </Typography>
           </Box>
           <Box sx={{ display: "flex", gap: 5 }}>
+          <Box>
+              <div class="search-box">
+                <input
+                  class="search-text"
+                  type="text"
+                  placeholder="Search....."
+                  onChange={(e) => handleSearch(e.target.value)}
+                />
+                <Button class="search-btn">
+                  <SearchIcon />
+                </Button>
+              </div>
+            </Box>
             <Button
               sx={{
                 width: "150px",

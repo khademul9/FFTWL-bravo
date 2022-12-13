@@ -18,7 +18,6 @@ function App() {
             <Route path="/bankAccount" element={<BankAccount/>} />
             <Route path="/addBank" element={<AddBank/>} />
             <Route path="/addtraveler" element={<AddTraveller />} />
-
           </Routes>
         </BrowserRouter>
       </AuthProvider>

@@ -20,6 +20,7 @@ function App() {
             <Route path="/addtraveler" element={<AddTraveller />} />
 
 
+
             <Route
               path="/generalledgerall"
               element={<GeneralLedgerRoute />}
@@ -28,13 +29,10 @@ function App() {
               path="/generalLedgerReport"
               element={<GeneralLedgerReport />}
             />
-
-
-            {/* ---------------------- -------------------------- ------------------------------- */}
-
-            {/* Nasim */}
+            {/* ---------------------- -------------------------- ------------------------------- */}        
             <Route path="/bankAccount" element={<BankAccount />} />
             <Route path="/addBank" element={<AddBank />} />
+
           </Routes>
         </BrowserRouter>
       </AuthProvider>

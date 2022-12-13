@@ -1,0 +1,33 @@
+/*  all table style  */
+
+.balance-transaction table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.balance-transaction table tr th {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 8px 0px;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.balance-transaction table td,
+th {
+  text-align: left;
+  padding: 8px;
+  text-align: center;
+}
+
+.balance-transaction table tbody tr {
+  color: #252733;
+  font-size: 12px;
+  background-color: #fff;
+}
+
+.balance-transaction table tr:hover {
+  background-color: #e0ecfb !important;
+}

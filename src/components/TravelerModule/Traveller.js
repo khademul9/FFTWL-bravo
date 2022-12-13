@@ -3,6 +3,7 @@ import { Box, Button, Container, Input } from "@mui/material";
 import { Typography } from "@mui/material";
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 import { Link } from "react-router-dom";
+import SearchIcon from "@mui/icons-material/Search";
 import "./Traveler.css";
 
 const Traveller = () => {
@@ -11,42 +12,50 @@ const Traveller = () => {
       <Container maxWidth="lg" style={{ marginTop: "50px" }}>
         <Box
           sx={{
-            margin: "30px 0px",
             display: "flex",
-            flexDirection: "row",
             alignItems: "center",
             justifyContent: "space-between",
           }}
         >
           <Box>
             <Typography
-              variant="span"
               sx={{
-                fontWeight: 500,
-                fontSize: "24px",
-                margin: "30px 0px",
-                color: "#222222",
+                fontWeight: 600,
+                fontSize: "26px",
+                color: "var(--black-color)",
                 fontFamily: "poppins",
+                textAlign: "left",
               }}
             >
               Travelers
             </Typography>
             <Typography
-              variant="span"
               sx={{
                 fontWeight: 400,
-                fontSize: "16px",
-                color: "#FFA84D",
+                fontSize: "17px",
+                color: "var(--primary-color)",
                 fontFamily: "poppins",
               }}
             >
-              You can find your all travelers here
+              You can find your all air ticket booking details here
             </Typography>
           </Box>
-          <Box sx={{ display: "flex", gap: 5 }}>
+          <Box sx={{ display: "flex", gap: 1, alignItems: "center" }}>
+            <Box>
+              <div class="search-box">
+                <input
+                  class="search-text"
+                  type="text"
+                  placeholder="Search....."
+                />
+                <Button class="search-btn">
+                  <SearchIcon />
+                </Button>
+              </div>
+            </Box>
             <Button
               sx={{
-                width: "150px",
+                width: "140px",
                 fontSize: "14px",
                 textTransform: "capitalize",
                 height: "36px",

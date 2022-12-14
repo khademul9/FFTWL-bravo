@@ -18,21 +18,15 @@ function App() {
             {/* Rifat */}
             <Route path="/traveler" element={<Traveller />} />
             <Route path="/addtraveler" element={<AddTraveller />} />
-
-
-
-            <Route
-              path="/generalledgerall"
-              element={<GeneralLedgerRoute />}
-            />
+            <Route path="/generalledgerall" element={<GeneralLedgerRoute />} />
             <Route
               path="/generalLedgerReport"
               element={<GeneralLedgerReport />}
             />
-            {/* ---------------------- -------------------------- ------------------------------- */}        
+
+            {/* ---------------------- Nipu vai -------------------------- ------------------------------- */}
             <Route path="/bankAccount" element={<BankAccount />} />
             <Route path="/addBank" element={<AddBank />} />
-
           </Routes>
         </BrowserRouter>
       </AuthProvider>

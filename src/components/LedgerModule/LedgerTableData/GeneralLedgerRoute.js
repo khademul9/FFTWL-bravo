@@ -15,7 +15,7 @@ const GeneralLedgerRoute = () => {
   };
 
   const handleSearch = (e) => {
-    console.log(e);
+    // console.log(e);
   };
 
   return (

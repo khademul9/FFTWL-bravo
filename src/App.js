@@ -7,6 +7,7 @@ import AddBank from "./components/AccountModule/AddBank";
 import AddTraveller from "./components/TravelerModule/AddTraveller";
 import GeneralLedgerReport from "./components/LedgerModule/GeneralLedgerReport";
 import GeneralLedgerRoute from "./components/LedgerModule/LedgerTableData/GeneralLedgerRoute";
+import BookingRoute from "./components/BookingModule/BookingManagement/BookingRoute";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
               path="/generalLedgerReport"
               element={<GeneralLedgerReport />}
             />
+            <Route path="/bookingroute" element={<BookingRoute />} />
 
             {/* ---------------------- Nipu vai -------------------------- ------------------------------- */}
             <Route path="/bankAccount" element={<BankAccount />} />

@@ -159,9 +159,6 @@ const IssueRequest = () => {
 
   return (
     <Box>
-      <Box className="searchList1" my={2}>
-        <input type="text" placeholder="search" onChange={handelSearchItems} />
-      </Box>
       <Box className="balance-transaction" marginTop={"20px"}>
         <table>
           <tr>
@@ -193,7 +190,7 @@ const IssueRequest = () => {
                 <a href={`#`}>
                   <PhoneIcon
                     style={{
-                      color: "#FFA84D",
+                      color: "#405687",
                       fontSize: "20px",
                       marginRight: "5px",
                     }}

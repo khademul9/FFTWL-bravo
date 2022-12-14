@@ -25,8 +25,8 @@ import "../BookingManagement/BookingRoute.css";
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#2564B8",
-      darker: "#dc143c",
+      main: "#405687",
+      darker: "#405687",
     },
   },
 });
@@ -159,9 +159,6 @@ const Reissued = () => {
 
   return (
     <Box>
-      <Box className="searchList1" my={2}>
-        <input type="text" placeholder="search" onChange={handelSearchItems} />
-      </Box>
       <Box className="balance-transaction" marginTop={"20px"}>
         <table>
           <tr>
@@ -193,7 +190,7 @@ const Reissued = () => {
                 <a href={`#`}>
                   <PhoneIcon
                     style={{
-                      color: "#FFA84D",
+                      color: "#405687",
                       fontSize: "20px",
                       marginRight: "5px",
                     }}
@@ -354,7 +351,7 @@ const Reissued = () => {
           display: "flex",
           justifyContent: "flex-end",
           alignItems: "center",
-          borderTop: "1px solid #FFA84D",
+          borderTop: "1px solid #405687",
           marginTop: "30px",
         }}
       >
@@ -369,7 +366,7 @@ const Reissued = () => {
             marginTop: "8px",
           }}
         >
-          <Typography style={{ fontSize: "15px" }}>
+          <Typography style={{ fontSize: "15px", color: "#222222" }}>
             Showing Results 1 - 10 of 20
           </Typography>
           <ThemeProvider theme={theme}>
